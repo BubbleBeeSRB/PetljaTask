@@ -1,0 +1,1 @@
+Resenje zadatka.

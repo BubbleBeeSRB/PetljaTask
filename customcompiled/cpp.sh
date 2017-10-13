@@ -1,0 +1,1 @@
+g++ grader.cpp example.h user.cpp -o example
