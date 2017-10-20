@@ -2,8 +2,8 @@
 code: ?
 
 # Tip zadatka, unosi se pri kreiranju zadatka kroz dashboard i ne moze se promeniti
-# Moguce vrednosti su: "standard", "output" USKORO: "custom" i "two-steps" 
-type: <standard | output>
+# Moguce vrednosti su: "standard", "output", "custom" 
+type: <standard | output | custom>
 
 # Naziv zadatka, unosi se pri kreiranju zadatka kroz dashboard ali se moze promeniti
 title: ?
