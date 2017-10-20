@@ -2,8 +2,8 @@
 code: ?
 
 # Tip zadatka, unosi se pri kreiranju zadatka kroz dashboard i ne moze se promeniti
-# Moguce vrednosti su: "standard", "output", "custom" 
-type: <standard | output | custom>
+# Moguce vrednosti su: "standard", "output", "customcompiled" 
+type: <standard | output | customcompiled>
 
 # Naziv zadatka, unosi se pri kreiranju zadatka kroz dashboard ali se moze promeniti
 title: ?
