@@ -10,6 +10,7 @@ Postoje 3 tipa zadataka:
 Greske u obaveznim fajlovima dovode do neuspesnog importovanja. Greske u opcionim fajlovima rezultuju ignorisanjem tih fajlova (kao da ne postoje).
 
 Opis strukture:
+- `default/` (nije deo strukture) - predstavlja default zadatak koji se dobije nakon kreiranja zadatka kroz dashboard i export-a
 - `example-meta.yml` (obavezno) - meta podaci o zadatku
 - `example-st.md` (obavezno) - tekst zadatka
 - `example-tests.yml` (obavezno) - podesavanja za testiranje
