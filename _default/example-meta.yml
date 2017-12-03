@@ -1,13 +1,8 @@
 code: <code> # uneto pri kreiranju
-type: <standard | function | output> # odabrano pri kreiranju
+type: <standard | output | customcompiled> # odabrano pri kreiranju
 title: <title> # uneto pri kreiranju
 
 timelimit: 1.0
 memlimit: 1.0
 checker: default
 lang: [] # svi jezici su dostupni
-setter: ?
-editorial: ?
-contributors: []
-origin: ?
-tags: []

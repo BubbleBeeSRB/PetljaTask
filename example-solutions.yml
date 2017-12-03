@@ -4,8 +4,10 @@ solutions:
     - name: example.cpp
       # Programski jezik
       lang: <c | cpp | cs | pas | java | py | py3 | sb>
+      # Kratak opis resenja (opciono)
+      desc: <>
       # Broj poena koje ovo resenje treba da osvoji
-      score: ?
+      score: <>
       # Status koje resenje postize. Status resenja definisemo kao najprioritetniji
       # status od statusa na test primerima.
       # Prioriteti statusa: WA > TLE > MLE > RTE > OK
@@ -13,6 +15,6 @@ solutions:
       # Da li je resenje vidljivo u prikazu zadatka
       public: <true | false>
       # Naziv resenja u prikazu zadatka
-      showname: ?
+      showname: <>
       # Tagovi, prilikom importa prihvataju se samo tagovi iz dogovorene liste (opciono)
       tags: []

@@ -14,10 +14,11 @@ Opis strukture:
 - `example-meta.yml` (obavezno) - meta podaci o zadatku
 - `example-st.md` (obavezno) - tekst zadatka
 - `example-tests.yml` (obavezno) - podesavanja za testiranje
-- `example-check.cpp` (ako je u meta fajlu postavljen custom checker onda je fajl obavezan, inace se njegovo postojanje ignorise) - checker za zadatak, podrzane ekstenzije su cpp i cs
-- `testcases/` (obavezno) - test primeri
+- `example-check.cpp` (obavezno ako je checker custom) - checker za zadatak, podrzane ekstenzije su cpp i cs
+- `example-testgen.cpp` (opciono) - generator test primera
+- `testcases/` (obavezno ako ne postoji testgen ili se zadatak uploaduje online) - test primeri
 - `example-sol.md` (opciono) - opis resenja zadatka
 - `example-solutions.yml` (opciono) - podesavanja za validaciju resenja
 - `solutions/` (opciono) - resenja zadatka
-- `templates/` (opciono) - folder sadrzi sablone ciji se sadrzaj ucitava u online editor kada se odabere odgovarajuci jezik
-- `customcompiled/` (obavezno samo za istoimeni tip zadatka) TODO: Objasniti kada tip bude podrzan.
+- `templates/` (opciono) - folder sadrzi sablone ciji se sadrzaj ucitava u online editor
+- `compile/` (obavezno samo za customcompiled tip zadatka) TODO: Objasniti kada tip bude podrzan.

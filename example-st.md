@@ -8,7 +8,7 @@ Opis ulaznih podataka.
 
 Opis izlaznih podataka.
 
-## Primer 1
+## Primer
 
 ### Ulaz
 

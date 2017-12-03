@@ -10,14 +10,14 @@ testcases:
     public: []
     # Ukupan broj mogucih poena za zadatak. Vrednost svakog primera je:
     # (total - overrides) / broj primera
-    score_total: ?
+    score_total: <>
     # Opciono.
     # Za svaki primer moguce je pregaziti default poene. Lista takvih primera.
     score_overrides:
           # Ime primera, bez in/out ekstenzije, recimo "case01"
-        - name: ?
+        - name: <>
           # Broj poena, ovaj broj se mnozi sa vrednoscu koju vrati checker iz [0.0, 1.0]
-          score: ?
+          score: <>
 
 # Zadatak se ocenjuje po grupama test primera (subtaskovima, podzadacima)
 subtasks:
@@ -28,13 +28,13 @@ subtasks:
     public: []
     # Ukupan broj mogucih poena za zadatak.
     # Verifikujemo da je suma score polja u svim grupama jednaka ovom polju.
-    score_total: ?
+    score_total: <>
     # Subtaskovi  
     groups:
           # Subtaskovi su poredjani po ovom id-u
-        - id: ?
+        - id: <>
           # Broj poena koji donosi subtask. Ocenjivanje se vrsi po principu
           # score * min(rezultat checker-a na svakom test primeru iz subtaska)
-          score: ?
+          score: <>
           # Test primeri u ovom subtasku, lista imena bez in/out ekstenzije, recimo ["case01"]
           testcases: []
