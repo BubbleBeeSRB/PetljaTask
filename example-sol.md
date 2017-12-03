@@ -1,3 +1,0 @@
-## Analiza
-
-## Smernice za algoritam
