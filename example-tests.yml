@@ -1,4 +1,7 @@
-# Jedna od ove dve strukture mora postojati i biti validna.
+# Fajl je opcioni i podesava testiranje i ocenjivanje zadatka.
+# Ako ne postoji, svi test primeri vrede 1 poen.  
+#
+# Ako fajl postoji, jedna od ove dve strukture mora postojati i biti validna.
 # Prvo se pokusava sa testcases strukturom, pa onda subtasks.
 
 # Zadatak se ocenjuje po test primerima.

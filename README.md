@@ -10,15 +10,15 @@ Postoje 3 tipa zadataka:
 Greske u obaveznim fajlovima dovode do neuspesnog importovanja. Greske u opcionim fajlovima rezultuju ignorisanjem tih fajlova (kao da ne postoje).
 
 Opis strukture:
-- `default/` (nije deo strukture) - predstavlja default zadatak koji se dobije nakon kreiranja zadatka kroz dashboard i export-a
-- `example-meta.yml` (obavezno) - meta podaci o zadatku
-- `example-st.md` (obavezno) - tekst zadatka
-- `example-tests.yml` (obavezno) - podesavanja za testiranje
+- `example-meta.yml` **(obavezno)** - meta podaci o zadatku
+- `example-st.md` **(obavezno)** - tekst zadatka
 - `example-check.cpp` (obavezno ako je checker custom) - checker za zadatak, podrzane ekstenzije su cpp i cs
-- `example-testgen.cpp` (opciono) - generator test primera
+- `example-tests.yml` (opciono) - podesavanja za testiranje, videti fajl za ponasanje ako ne postoji
+- `example-tgen.cpp` (opciono) - generator test primera
 - `testcases/` (obavezno ako ne postoji testgen ili se zadatak uploaduje online) - test primeri
 - `example-sol.md` (opciono) - opis resenja zadatka
 - `example-solutions.yml` (opciono) - podesavanja za validaciju resenja
 - `solutions/` (opciono) - resenja zadatka
 - `templates/` (opciono) - folder sadrzi sablone ciji se sadrzaj ucitava u online editor
 - `compile/` (obavezno samo za customcompiled tip zadatka) TODO: Objasniti kada tip bude podrzan.
+- `default/` (nije deo strukture) - predstavlja default zadatak koji se dobije nakon kreiranja zadatka kroz dashboard i export-a
