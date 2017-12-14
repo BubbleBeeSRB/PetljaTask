@@ -1,0 +1,3 @@
+Zadatak moze biti u PDF formatu.
+Ako ne postoji `-st.md` fajl, zahteva se postojanje `-st.pdf` fajla.
+Ako postoje oba, koristi se `-st.md` fajl, dok se `-st.pdf` uploaduje i daje korisnicima na preuzimanje. 

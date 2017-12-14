@@ -1,1 +1,0 @@
-gcc grader.cpp example.h user.c -o example

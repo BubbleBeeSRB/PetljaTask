@@ -2,4 +2,5 @@
 
 **Folder nije obavezan.**
 
-Folder sadrzi resenja navedena u -solutions.yml fajlu.
+Folder sadrzi resenja koja se validiraju i/ili prikazuju korisninu.
+Zahteva `solutions` konfiguraciju u `-config.yml` fajlu.
