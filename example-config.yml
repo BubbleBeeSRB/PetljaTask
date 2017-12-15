@@ -1,0 +1,105 @@
+# Osnovne informacije o zadatku.
+meta:
+  # Jedinstveni Petlja kod zadatka. Ako se zadatak kreira kroz dashboard dobija se kod.
+  # Inace, kreira se na osnovu imena zadatka pri cemu publishovanje ne prolazi ako je kod zauzet.
+  code: <>
+  # Tip zadatka. Moguce vrednosti su: "standard", "output", "customcompiled".
+  type: <standard | output | customcompiled>
+  # Naziv zadatka.
+  title: <>
+  # Vremensko ogranicenje u sekundama, recimo 1.0.
+  timelimit: <>
+  # Memorijsko ogranicenje u MB, recimo 64.
+  memlimit: <>
+  # Jedan od predefinisanih stringova za osnovne checker-e ili "custom" uz prilozeni -check fajl.
+  checker: <>
+  # (opciono) Ime i prezime ili Petlja username autora zadatka.
+  author: <>
+  # (opciono) Ime i prezime ili Petlja username autora resenja.
+  solauthor: <>
+  # (opciono) Lista ljudi (ime i prezime ili Petlja username).
+  contributors: []
+  # (opciono) Izvor zadatka.
+  origin: <>
+  # (opciono) Tagovi.
+  tags: []
+
+# (opciono) Informacije za ocenjivanje zadatka.
+# Polje je lista razlicitih evaluacija. Prvi element u listi se koristi po default-u.
+# Ostale evaluacije se mogu birati pri dodavanju zadatka u takmicenje.
+# Za zadatak uvek postoji default evaluacija, cak i ako evaluation sekcija nije prisutna:
+#  - name: default
+#    type: testcase
+#    score_total: broj test primera
+evaluation: 
+    # (opciono) Naziv ovog ocenjivanja. Korisno kada autor zadaje vise razlicitih ocenjivanja.
+  - name: <>
+    # Tip ocenjivanja. Da li se svaki primer ocenjuje pojedinacno ili su primeri grupisani.
+    type: <testcase | subtask>
+    # Ukupan broj mogucih poena za zadatak.
+    # Vrednost svakog primera je (total - overrides) / broj primera
+    # U slucaju subtask tipa, validira se da je suma svih subtaskova jednaka ukupnom broju poena.
+    score_total: <>
+    # Samo u slucaju subtask tipa.
+    groups:
+        # Jedinstveno odredjuje subtask. Subtaskovi su poredjani po ovom id-u.
+      - id: <>
+        # Broj poena koji donosi subtask. Ocenjivanje se vrsi po principu.
+        # score * min(rezultat checker-a na svakom test primeru iz subtaska)
+        score: <>
+        # Test primeri u ovom subtasku.
+        # lista imena bez in/out ekstenzije, recimo ["case01"].
+        # Ili lista aliasa ako je korisceno  id-eva 
+        testcases: []
+    # (opciono) Samo u slucaju testcase tipa. 
+    # Za svaki primer moguce je pregaziti default poene. Lista takvih primera.
+    score_overrides:
+        # Ime primera, bez in/out ekstenzije, recimo "case01".
+      - name: <>
+        # Broj poena, ovaj broj se mnozi sa vrednoscu koju vrati checker iz [0.0, 1.0].
+        score: <>
+    # (opciono) Ovi primeri ce biti vizuelno izdvojeni pri prikazivanju feedback-a (primeri sa papira).
+    # Dodatno, ako je zadatak u takmicenju, bez obzira da li je feedback na nivou takmicenja dostupan,
+    # za ove primere jeste. U slucaju da je tip zadatka subtasks, lista sadrzi id-eve subtaskova.
+    public: []
+
+# (opciono) Informacije o resenjima iz solutions foldera.
+solutions:
+    # Naziv fajla sa resenjem.
+  - filename: example.cpp
+    # Programski jezik.
+    lang: <c | cpp | cs | pas | java | py | py3 | sb>
+    # Naziv resenja u prikazu zadatka.
+    name: <>
+    # (opciono) Kratak opis resenja.
+    desc: <>
+    # (opciono) Broj poena koje ovo resenje treba da osvoji. Koristi se za validaciju resenja.
+    score: <>
+    # (opciono) Status koje resenje postize. Status resenja definisemo kao najprioritetniji
+    # status od statusa na test primerima. Koristi se za validaciju resenja.
+    # Prioriteti statusa: WA > TLE > MLE > RTE > OK
+    status: <WA | TLE | MLE | RTE | OK>
+    # Da li je resenje vidljivo u prikazu zadatka? Ili je samo za validaciju.
+    public: <true | false>
+    # (opciono) Tagovi.
+    tags: []
+
+# Potrebno samo za customcompiled zadatak. Uz compile folder.
+scripts:
+    # Naziv fajla u kome je skripta za kompajliranje.
+  - filename: <>
+    # Lista kodova jezika za koje se koristi ova skripta. Jedan kod se ne moze pojavljivati u vise langs polja.
+    # Zadatak je moguce resiti u jeziku X samo ako se X pojavljuje u nekom od langs polja.
+    langs: []
+
+# (opciono) Informacije o template-ima iz templates foldera.
+templates:
+    # Naziv template fajla.
+  - filename:
+    # Moguci elementi su kodovi za jezike za koje se prikazuje ovaj template.
+    langs: []
+    # Da li je u pitanju smart template?
+    # Smart template sadrzi <USERLINE> ili <USERBLOCK> tagove tamo gde je dozvoljeno korisniku da
+    # upise liniju ili umetne blok koda.
+    smart: <true | false> 
+    

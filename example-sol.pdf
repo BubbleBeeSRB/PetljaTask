@@ -1,0 +1,3 @@
+Zadatak moze biti u PDF formatu.
+Ako ne postoji `-sol.md` fajl, zahteva se postojanje `-sol.pdf` fajla.
+Ako postoje oba, koristi se `-sol.md` fajl, dok se `-sol.pdf` uploaduje i daje korisnicima na preuzimanje. 
