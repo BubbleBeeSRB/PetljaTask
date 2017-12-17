@@ -95,11 +95,20 @@ scripts:
 # (opciono) Informacije o template-ima iz templates foldera.
 templates:
     # Naziv template fajla.
-  - filename:
+  - filename: <>
     # Moguci elementi su kodovi za jezike za koje se prikazuje ovaj template.
     langs: []
     # Da li je u pitanju smart template?
     # Smart template sadrzi <USERLINE> ili <USERBLOCK> tagove tamo gde je dozvoljeno korisniku da
     # upise liniju ili umetne blok koda.
     smart: <true | false> 
-    
+
+# (opciono) Hintovi za resenje zadatka.
+hints:
+    # Naziv .md hint fajla.
+  - filename: <>
+    # Hintovi se prikazuju sortirani po ovoj vrednosti.
+    order: <>
+    # (opciono) Vrednost hinta. Po default-u svi hintovi vrede isto.
+    # Moguce je dati procentualnu vrednost hintu, zahteva se da suma vrednosti svih hintova bude 100.
+    value: <>
